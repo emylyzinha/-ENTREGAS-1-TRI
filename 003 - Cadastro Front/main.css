@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Alfa+Slab+One & display=swap');
+
+:root {
+    --ascent-color: #2D104B;
+    --detalheRoxin: #846C9C;
+    --greyzinho: #cdcdcd;
+    --backgroung-color: #eeeeee;
+    --branquissimo: #FFFFFFFF;
+    font-family: 'Roboto', sans-serif;
+    --font-title: 'Alfa Slab One', cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--backgroung-color);
+}
+
+header {
+    padding: .25em;
+    background-color: var(--ascent-color);
+    color: var(--backgroung-color);
+    text-align: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.action-bar{
+    margin: 10px;
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+}
+
+div.action-bar input{
+    border-radius: 7px;
+    font-size: 18px;
+    width: 200px;
+    border: 1px solid var(--greyzinho);
+}
+
+div.action-bar button{
+    border-radius: 7px;
+    border: 1px solid var(--greyzinho);
+    background-color: var(--ascent-color);
+    width: 50px;
+}
+
+div.action-bar button:hover {
+    background-color: var(--greyzinho);
+    width: 52px;
+    height: 52px;
+}
+
+.modal {
+    background-color: var(--ascent-color);
+    border: 1px solid var(--greyzinho);
+    color: var(--branquissimo);
+    height: 370px;
+    width: 300px;
+    box-shadow: 0px 5px 23px -11px var(--ascent-color);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 2em;
+    position: relative;
+}
+
+.modal .bt-close {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    right: -0.5em;
+    top: -1em;
+    background-color: var(--backgroung-color);
+    color: var(--ascent-color);
+    border: 1px solid var(--greyzinho);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal h1 {
+    display: block;
+    margin: 0 0 0.25em 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.modal form > div {
+    margin-bottom: 1.5em;
+}
+
+.modal form > div > label {
+    display: block;
+}
+
+.modal form > div > input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.modal div.action {
+    display: flex;
+    justify-content: flex-end;
+    height: 35px;
+}
+
+.modal div.action button{
+    height: 35px;
+    width: 60px;
+    font-size: 12px;
+    border-radius: 7px;
+    border: 1px solid var(--greyzinho);
+    background-color: var(--backgroung-color);
+}
+
+.modal div.action button :hover{
+    color: var(--detalheRoxin);
+}
